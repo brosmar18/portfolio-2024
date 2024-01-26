@@ -3,7 +3,7 @@ import { useState, useRef, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
 
-function randomPointsInSphere(numPoints, radius) {
+function randomPointsInSphere(numPoints: number, radius: number) {
   const points = new Float32Array(numPoints * 3);
   for (let i = 0; i < numPoints; i++) {
     let u = Math.random();

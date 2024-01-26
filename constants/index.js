@@ -5,18 +5,18 @@ export const navLinks = [
     },
     {
         label: 'Experience',
-        rotue: '/experience',
+        route: '/experience',
     },
     {
         label: 'Projects',
-        rotue: '/projects',
+        route: '/projects',
     },
     {
         label: 'About Us',
-        rotue: '/about',
+        route: '/about',
     },
     {
         label: 'Contact',
-        rotue: '/contact',
+        route: '/contact',
     },
 ]

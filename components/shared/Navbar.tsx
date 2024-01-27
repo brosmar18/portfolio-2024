@@ -10,7 +10,7 @@ import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 const Navbar = () => {
   const pathname = usePathname();
 
-  const getLinkClassName = (route) => {
+  const getLinkClassName = (route: string) => {
     return `text-[16px] font-medium leading-[24px] whitespace-nowrap ${
       pathname === route ? 'text-[#0886D6]' : 'text-[#fafafa]'
     }`;

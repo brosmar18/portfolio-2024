@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import MobileNav from './MobileNav';
+import MobileNav from './NavLink';
 
 const Header = () => {
   return (

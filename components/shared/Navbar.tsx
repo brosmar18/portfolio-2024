@@ -113,7 +113,16 @@ const Navbar = () => {
             animate='opened'
             className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
           >
-
+            {navLinks.map(link => (
+              <motion.div
+                key={`link-${link.label}`}
+                variants={listItemVariants}
+              >
+                <Link href={link.route}>
+                  {link.label}
+                </Link>
+              </motion.div>
+            ))}
           </motion.div>
         )}
       </div>

@@ -76,3 +76,8 @@
 body {
   font-family: var(--font-poppins)
 }
+
+
+.custom-gradient {
+  background-image: linear-gradient(to right, #a187f0, #e31e66);
+}

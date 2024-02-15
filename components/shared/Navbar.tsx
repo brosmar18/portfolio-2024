@@ -2,16 +2,15 @@
 
 import { navLinks } from '@/constants';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import React, { useState } from 'react';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import NavLink from './NavLink';
 
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
 
   const topVariants = {
     closed: {
@@ -82,9 +81,7 @@ const Navbar = () => {
     <nav className='h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-lg'>
       <div className='hidden md:flex gap-4 w-1/3 z-30'>
         {navLinks.map(link => (
-          <Link className={`rounded p-1 ${pathname === link.route ? 'bg-white text-black' : ''}`} href={link.route} key={link.label}>
-            {link.label}
-          </Link>
+          <NavLink link={link} key={link.label} />
         ))}
       </div>
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center items-center">

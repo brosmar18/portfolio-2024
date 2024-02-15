@@ -45,38 +45,48 @@ const Navbar = () => {
 
   const listVariants = {
     closed: {
-      x: '100vw',
+      opacity: 0,
+      transition: {
+        when: "afterChildren"
+      }
     },
     opened: {
-      x: 0,
+      opacity: 1,
       transition: {
-        when: 'beforeChildren',
-        staggerChildren: 0.2
+        when: "beforeChildren",
+        staggerChildren: 0.1,
+        delayChildren: 0.2
       }
     },
   };
 
   const listItemVariants = {
     closed: {
-      x: -10,
-      opacity: 0
+      y: 20,
+      opacity: 0,
+      transition: {
+        duration: 0.2
+      }
     },
     opened: {
-      x: 0,
-      opacity: 1
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.4
+      }
     }
-  }
+  };
 
   return (
     <nav className='h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-lg'>
-      <div className='hidden md:flex gap-4 w-1/3 z-40'>
+      <div className='hidden md:flex gap-4 w-1/3 z-30'>
         {navLinks.map(link => (
           <Link className={`rounded p-1 ${pathname === link.route ? 'bg-white text-black' : ''}`} href={link.route} key={link.label}>
             {link.label}
           </Link>
         ))}
       </div>
-      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
+      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center items-center">
         <Link href='/' className="text-sm rounded-md p-1 bg-white font-semibold flex items-center justify-center">
           <Image src='/assets/images/logo.png' alt='logo' width={30} height={30} />
         </Link>

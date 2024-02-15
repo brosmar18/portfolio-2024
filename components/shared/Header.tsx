@@ -1,10 +1,9 @@
 import React from 'react';
 import Navbar from './Navbar';
-import MobileNav from './NavLink';
 
 const Header = () => {
   return (
-    <header className='w-full border-b z-20'>
+    <header className='w-full border-b'>
       <div className="hidden md:block">
         <Navbar />
       </div>

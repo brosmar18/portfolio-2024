@@ -15,8 +15,4 @@ export const navLinks = [
         label: 'Contact',
         route: '/contact',
     },
-    {
-        label: 'Practice',
-        route: '/practice',
-    },
 ]

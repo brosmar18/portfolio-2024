@@ -77,6 +77,7 @@ const Navbar = () => {
     }
   };
 
+
   return (
     <nav className='h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-lg'>
       <div className='hidden md:flex gap-4 w-1/3 z-30'>
@@ -87,7 +88,7 @@ const Navbar = () => {
         ))}
       </div>
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center items-center">
-        <Link href='/' className="text-sm rounded-md p-1 bg-white font-semibold flex items-center justify-center">
+        <Link href='/' className="rounded-md p-1 bg-white flex items-center justify-center">
           <Image src='/assets/images/logo.png' alt='logo' width={30} height={30} />
         </Link>
       </div>

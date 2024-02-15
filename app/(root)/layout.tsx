@@ -9,15 +9,11 @@ export default function RootLayout({
     children: React.ReactNode;
   }>) {
     return (
-      <div className="w-screen h-screen">
+      <div className="bg-[#000B2A] text-[#fafafa]">
         <Stars />
-        <div className="h-24">
           <Navbar />
-        </div>
         <main className="h-[calc(100vh-12rem)]">{children}</main>
-        <div className="h-24">
           <Footer />
-        </div>
       </div>
     );
   }

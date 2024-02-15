@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 import Stars from "@/components/shared/Stars";
 
@@ -13,7 +14,10 @@ export default function RootLayout({
         <div className="h-24">
           <Navbar />
         </div>
-        <main className="h-[calc(100vh-6rem)]">{children}</main>
+        <main className="h-[calc(100vh-12rem)]">{children}</main>
+        <div className="h-24">
+          <Footer />
+        </div>
       </div>
     );
   }

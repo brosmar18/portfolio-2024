@@ -1,5 +1,4 @@
-import Footer from "@/components/shared/Footer";
-import Header from "@/components/shared/Header";
+import Navbar from "@/components/shared/Navbar";
 import Stars from "@/components/shared/Stars";
 
 
@@ -9,11 +8,12 @@ export default function RootLayout({
     children: React.ReactNode;
   }>) {
     return (
-      <div className="flex h-screen flex-col ">
+      <div className="w-screen h-screen">
         <Stars />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <div className="h-24">
+          <Navbar />
+        </div>
+        <main className="h-[calc(100vh-6rem)]">{children}</main>
       </div>
     );
   }

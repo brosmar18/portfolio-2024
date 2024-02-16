@@ -12,7 +12,7 @@ export default function RootLayout({
       <div className="bg-[#000B2A] text-[#fafafa]">
         <Stars />
           <Navbar />
-        <main className="h-[calc(100vh-12rem)]">{children}</main>
+        <main>{children}</main>
           <Footer />
       </div>
     );

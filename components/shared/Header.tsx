@@ -1,11 +1,12 @@
+import React from "react";
 import Image from "next/image"
 import Link from "next/link"
 
 const Header = () => {
  return (
   <>
-   <div className="z-50">
-    <Image src='/assets/images/hero.png' alt="" height={600} width={300} />
+   <div className="z-20">
+    <Image src='/assets/images/hero.png' alt="" height={600} width={300} priority/>
    </div>
    <div className="w-1/2 flex flex-col gap-8 items-center justify-center">
     <h1 className="text-3xl lg:text-5xl font-bold "> Developing Seamless

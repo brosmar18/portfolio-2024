@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const Header = () => {
  return (
@@ -30,6 +31,10 @@ const Header = () => {
       </span>,
       From Front to Back.</h1>
      <p className="md:text-xl">Welcome to the intersection of functionality and creativity in my full-stack development journey. Here, you'll find a showcase of versatile projects, each a testament to my approach to building robust and aesthetically pleasing digital experiences.</p>
+     <div className="flex gap-4 z-20">
+      <Link href='/projects' className="p-4 rounded-lg ring-1 ring-white bg-black text-white">View My Work</Link>
+      <Link href='/contact' className="p-4 rounded-lg ring-1 ring-white">Contact Me</Link>
+     </div>
     </div>
    </>
   </>

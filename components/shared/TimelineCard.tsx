@@ -5,18 +5,17 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "../ui/card";
 import { RxCalendar } from "react-icons/rx";
 
 const TimelineCard = ({ title, companyName, icon, points, date }: {
-  title?: string;
-  companyName?: string;
-  icon?: string;
-  points?: string;
-  date?: string;
+  title: string;
+  companyName: string;
+  icon: string;
+  points: string[];
+  date: string;
 
 }) => {
   return (

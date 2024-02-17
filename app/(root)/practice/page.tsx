@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../../../components/shared/Card";
+import TimelineCard from "../../../components/shared/Card";
 import { experiences } from "../../../constants/index";
 
 const Practice = () => {
@@ -19,12 +19,13 @@ const Practice = () => {
           <div className="text-red-400 text-sm font-semibold">
             {experience.date}
           </div>
-          <Card
+          <TimelineCard
             key={index}
             title={experience.title}
             companyName={experience.company_name}
             icon={experience.icon}
             points={experience.points}
+            date={date}
           />
         </>
       ))}

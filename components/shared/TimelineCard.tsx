@@ -11,7 +11,14 @@ import {
 } from "../ui/card";
 import { RxCalendar } from "react-icons/rx";
 
-const TimelineCard = ({ title, companyName, icon, points, date }) => {
+const TimelineCard = ({ title, companyName, icon, points, date }: {
+  title?: string;
+  companyName?: string;
+  icon?: string;
+  points?: string;
+  date?: string;
+
+}) => {
   return (
     <div className="h-[45rem] md:h-[30rem] w-full flex items-center justify-center">
       <PinContainer

@@ -1,6 +1,6 @@
-import Footer from "@/components/shared/Footer";
-import Navbar from "@/components/shared/Navbar";
-import Stars from "@/components/shared/Stars";
+import React from "react";
+import Footer from "../../components/shared/Footer";
+import Navbar from "../../components/shared/Navbar";
 
 
 export default function RootLayout({
@@ -10,7 +10,6 @@ export default function RootLayout({
   }>) {
     return (
       <div className="bg-[#000B2A] text-[#fafafa]">
-        <Stars />
           <Navbar />
         <main>{children}</main>
           <Footer />

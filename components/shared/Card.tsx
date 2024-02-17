@@ -9,7 +9,7 @@ const Card = ({ title, companyName, icon, points }) => {
       <PinContainer
         company={<Image src={icon} alt={companyName} width={50} height={50} />}
       >
-        <div className="flex basis-full flex-col gap-4 tracking-tight sm:basis-1/2 w-[30rem] h-[30rem]">
+        <div className="flex basis-full flex-col gap-4 tracking-tight sm:basis-1/2 w-[30rem] h-full">
           <h3 className="bg-black p-3 font-semibold rounded-b-lg rounded-s-l">
             {title}
           </h3>
@@ -21,7 +21,6 @@ const Card = ({ title, companyName, icon, points }) => {
               </span>
             ))}
           </div>
-          <div className="flex flex-1 w-full rounded-lg bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
         </div>
       </PinContainer>
     </div>

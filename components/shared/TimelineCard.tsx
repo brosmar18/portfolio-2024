@@ -8,16 +8,16 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../../components/ui/card";
+} from "../ui/card";
 import { RxCalendar } from "react-icons/rx";
 
 const TimelineCard = ({ title, companyName, icon, points, date }) => {
   return (
-    <div className="h-[45rem] md:h-[40rem] w-full flex flex-col items-center justify-center">
+    <div className="h-[45rem] md:h-[30rem] w-full flex items-center justify-center">
       <PinContainer
         company={<Image src={icon} alt={companyName} width={50} height={50} />}
       >
-        <Card className="flex basis-full flex-col gap-4 tracking-tight sm:basis-1/2 w-[300px] sm:w-[350px] md:-[380px] h-full">
+        <Card className="flex basis-full flex-col gap-4 tracking-tight sm:basis-1/2 w-[300px] sm:w-[600px] md:-[700px]">
           <CardHeader>
             <CardTitle>{title}</CardTitle>
             <CardDescription className="text-sm text-red-500">
